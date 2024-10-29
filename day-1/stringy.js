@@ -84,11 +84,20 @@ return string.toUpperCase()
 
 function toDashCase(string) {
     // YOUR CODE BELOW HERE //
-//returning string forced to dash-case using .join() method and to lower case
-return string.toLowerCase().join("-")
+  //creating for loop to iterate through string and locate space
+  
+ for(let i = 0; i < string.length; i++){
+  //creating nested if statement to locate space and replace with dash
+  if (string === ' '){
+    return string.join('-')
+  }
+ }
+  
+//returning string forced to lower case
+return string.toLowerCase()
+  
     // YOUR CODE ABOVE HERE //
 }
-
 /**
  * Given an input String and a single character, return true if the String
  * begins with the character, false otherwise. The Function is case insensitive.
@@ -102,8 +111,8 @@ return string.toLowerCase().join("-")
  *      ensure uppercase and lowercase can be compared equally?
  */
 
-//I:
-//O:
+//I: string data type and characters in string
+//O: boolean
 //C:
 //E:
 

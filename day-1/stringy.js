@@ -84,7 +84,7 @@ return string.toUpperCase()
 
 function toDashCase(string) {
     // YOUR CODE BELOW HERE //
-  //creating for loop to iterate through string and locate space
+  //creating for loop to iterate through string 
   
  for(let i = 0; i < string.length; i++){
   //creating nested if statement to locate space and replace with dash

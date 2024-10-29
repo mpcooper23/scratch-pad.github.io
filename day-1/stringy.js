@@ -84,8 +84,8 @@ return string.toUpperCase()
 
 function toDashCase(string) {
     // YOUR CODE BELOW HERE //
-//returning string forced to dash-case using .replace() method
-return string.replace()
+//returning string forced to dash-case using .join() method and to lower case
+return string.toLowerCase().join("-")
     // YOUR CODE ABOVE HERE //
 }
 

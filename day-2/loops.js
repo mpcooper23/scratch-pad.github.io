@@ -18,11 +18,10 @@
 
 function printArrayValues(array) {
   // YOUR CODE BELOW HERE //
-  //logging array input parameter
-  console.log(array)
-  
-  
-  
+  //creating a for loop to iterate forward through array
+  for(let i = 0; i < array.length; i++){
+  //logging array loop's iterations 
+  console.log(array[i])}
   // YOUR CODE ABOVE HERE //
 }
 

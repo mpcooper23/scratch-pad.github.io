@@ -33,9 +33,21 @@
  *      the exact case.
  */
 
+//I: hour of day, or number data
+//O: log a string depending on hour of day
+//C: if, if-else, else statement
+//E:
+
 function greeter(hour) {
     // YOUR CODE BELOW HERE //
-    
+    //initializing first condition in if statement
+    if (hour >= 11 && hour === 0){
+        console.log("Good Morning!")
+    }else if (hour > 12 && hour < 16){
+        console.log("Good Afternoon!")
+    }else if (hour > 17 && hour < 21){
+        console.log("Good Evening!")
+    }else (console.log("Good Night!"))
     
     
     

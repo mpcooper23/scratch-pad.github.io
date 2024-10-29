@@ -41,11 +41,11 @@
 function greeter(hour) {
     // YOUR CODE BELOW HERE //
     //initializing first condition in if statement
-    if (hour >= 11 && hour === 0){
+    if (hour >= 11 || hour === 0){
         console.log("Good Morning!")
-    }else if (hour > 12 && hour < 16){
+    }else if (hour > 12 || hour < 16){
         console.log("Good Afternoon!")
-    }else if (hour > 17 && hour < 21){
+    }else if (hour > 17 || hour < 21){
         console.log("Good Evening!")
     }else (console.log("Good Night!"))
     

@@ -16,12 +16,16 @@
  * Given an input value, print the value to the screen using console.log().
  */
 
+//I: number data type
+//O: printing number data type to console
+//C:
+//E:
 
 
 function print(value) {
   // YOUR CODE BELOW HERE //
-  
-
+  //logging value
+console.log(value)
   
   // YOUR CODE ABOVE HERE //
 }

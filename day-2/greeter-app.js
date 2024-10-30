@@ -40,6 +40,8 @@
 
 function greeter(hour) {
     // YOUR CODE BELOW HERE //
+    // initializing var for input hour
+    //var timeNow = hour
     //initializing first condition in if statement, followed by else-if to establish if hour falls in monring, afternoon, evening, or night.
     if (hour >= 0 || hour <= 11){
      console.log("Good Morning!")
@@ -48,7 +50,7 @@ function greeter(hour) {
     } else if (hour >= 17 || hour <= 21){
         console.log("Good Evening!")
     }else {console.log("Good Night!")}
-    
+    return greeter
     // YOUR CODE ABOVE HERE //
 }
 

@@ -271,15 +271,19 @@ if (stringOne > stringTwo){
  * TIP: How can we compare Strings? Is 'a' greater than or less than 'b'?
  */
 
-//I:
-//O:
+//I: two strings
+//O: either 1, - 1, or 0
 //C:
 //E:
 
 function sortDescending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-
-
+//creating conditional logic in if statement that compares stringOne and stringTwo
+if (stringOne > stringTwo){
+    return 1
+}else if (stringOne < stringTwo){
+    return - 1
+}else {return 0}
 
 
     // YOUR CODE ABOVE HERE //

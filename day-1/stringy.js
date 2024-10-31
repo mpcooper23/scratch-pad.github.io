@@ -84,20 +84,20 @@ return string.toUpperCase()
 
 function toDashCase(string) {
     // YOUR CODE BELOW HERE //
+
+    return string.split(' ').join('-').toLowerCase()
   //creating for loop to iterate through string 
   
  for(let i = 0; i < string.length; i++){
-  //creating nested if statement to locate space and replace with dash
-  if (string === ' '){
-    return string.join('-')
+  //looping and creating nested if statement to locate space and replace with dash
+  if (string[i] === ' ') {
+  //returning string to lowercase
+ return string.toLowerCase().concat('-')
   }
  }
-  
-//returning string forced to lower case
-return string.toLowerCase()
-  
     // YOUR CODE ABOVE HERE //
 }
+
 /**
  * Given an input String and a single character, return true if the String
  * begins with the character, false otherwise. The Function is case insensitive.
@@ -118,7 +118,12 @@ return string.toLowerCase()
 
 function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
-
+//creating for loop to loop through string
+for(let i = 0; i < string.length; i++){
+    if(string[0] === char){
+        return true
+    }else{false}
+}
     
 
     // YOUR CODE ABOVE HERE //
@@ -156,16 +161,16 @@ function endsWith(string, char) {
  * TIP: What's the operator to concatenate two Strings?
  */
 
-//I:
-//O:
-//C:
+//I: two strings
+//O: two strings concatenated
+//C: use .concat()
 //E:
 
 function concat(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
+let newString = stringOne.concat(stringTwo)
 
-
-
+return newString
     // YOUR CODE ABOVE HERE //
 }
 

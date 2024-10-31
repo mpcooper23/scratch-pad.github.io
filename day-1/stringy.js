@@ -88,13 +88,13 @@ function toDashCase(string) {
     return string.split(' ').join('-').toLowerCase()
   //creating for loop to iterate through string 
   
- for(let i = 0; i < string.length; i++){
+ //for(let i = 0; i < string.length; i++){
   //looping and creating nested if statement to locate space and replace with dash
-  if (string[i] === ' ') {
+  //if (string[i] === ' ') {
   //returning string to lowercase
- return string.toLowerCase().concat('-')
-  }
- }
+ //return string.toLowerCase().concat('-')
+  //}
+ //}
     // YOUR CODE ABOVE HERE //
 }
 
@@ -113,18 +113,19 @@ function toDashCase(string) {
 
 //I: string data type and characters in string
 //O: boolean
-//C:
+//C: use beginsWith()
 //E:
 
 function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
-//creating for loop to loop through string
-for(let i = 0; i < string.length; i++){
-    if(string[0] === char){
-        return true
-    }else{false}
-}
-    
+//forcing string to lowercase
+string.toLowerCase()
+// initializing if statement to check if the first character of the string
+    if(string === string.startsWith(char)){
+        return true;
+    }else{
+        return false;
+    }
 
     // YOUR CODE ABOVE HERE //
 }
@@ -149,8 +150,14 @@ for(let i = 0; i < string.length; i++){
 
 function endsWith(string, char) {
     // YOUR CODE BELOW HERE //
-
-
+//accounting for to lower case
+string.toLowerCase()
+// initializing if statement to check if the last character of the string matches inputted char
+if(string.length - 1 === string.endsWith(char)){
+    return true;
+}else{
+    return false;
+}
 
     // YOUR CODE ABOVE HERE //
 }
@@ -193,7 +200,10 @@ return newString
 function join(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
     var args = Array.from(arguments);
-
+    //initializing a variable 
+   let newString = stringOne.join(stringTwo).push(args)
+    
+return newString
 
     // YOUR CODE ABOVE HERE //
 }
@@ -208,14 +218,17 @@ function join(stringOne, stringTwo) {
  * TIP: What property of the String do we need to compare?
  */
 
-//I:
-//O:
+//I: two strings
+//O: longest of the two strings
 //C:
 //E:
 
 function longest(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-
+//creating conditional if statement to compare two strings and return the longest of the two
+if (stringOne.length > stringTwo.length){
+    return stringOne
+}else {return stringTwo}
 
 
     // YOUR CODE ABOVE HERE //

@@ -289,6 +289,17 @@ if (stringOne > stringTwo){
     // YOUR CODE ABOVE HERE //
 }
 
+//I: string
+//O: string reversed
+
+
+function reverseString(string){
+    //creating var to hold new reversed string
+let stringReversed = ' ';
+//initializing for loop to reverse loop through string, and then push the results to stringReversed var.
+for (let i = string.length - 1; i < 0; i--)
+stringReversed.push(string)
+}
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
 if((typeof process !== 'undefined') &&

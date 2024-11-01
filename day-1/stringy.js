@@ -198,18 +198,20 @@ return newString
  *      in an Array called args.
  */
 
-//I:
-//O:
+//I: any number of strings
+//O: all strings joined
 //C:
 //E:
 
 function join(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
     var args = Array.from(arguments);
-    //initializing a variable 
-   let newString = stringOne.join(stringTwo).push(args)
+   //initializing output var
+   let newString = stringOne + stringTwo
+//pushing joined string into args
+   newString.push(args)
     
-return newString
+return args
 
     // YOUR CODE ABOVE HERE //
 }

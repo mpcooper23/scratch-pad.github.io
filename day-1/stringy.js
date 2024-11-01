@@ -119,13 +119,19 @@ function toDashCase(string) {
 function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
 //forcing string to lowercase
-string.toLowerCase()
+let result = string.toLowerCase()
+//initializing if statement
+if (string.startsWith(char) === true){
+    return true;
+}else {
+    return false
+}
 // initializing if statement to check if the first character of the string
-    if(string === string.startsWith(char)){
-        return true;
-    }else{
-        return false;
-    }
+   // if(string[0] === string.startsWith(char)){
+     //   return true;
+  //  }else{
+     //   return false;
+  //  }
 
     // YOUR CODE ABOVE HERE //
 }
@@ -143,21 +149,21 @@ string.toLowerCase()
  *      ensure uppercase and lowercase can be compared equally?
  */
 
-//I:
-//O:
-//C:
+//I: string and single character
+//O: boolean that returns true if inputted string ends with inputted char
+//C: ensure upper and lowercase are compared equally
 //E:
 
 function endsWith(string, char) {
     // YOUR CODE BELOW HERE //
 //accounting for to lower case
-string.toLowerCase()
+string.endsWith(string, char)
 // initializing if statement to check if the last character of the string matches inputted char
-if(string.length - 1 === string.endsWith(char)){
-    return true;
-}else{
-    return false;
-}
+//if(string.length - 1 === string.endsWith(char)){
+  //  return true;
+//}else{
+   // return false;
+
 
     // YOUR CODE ABOVE HERE //
 }

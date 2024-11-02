@@ -57,10 +57,12 @@ function getObjectKeys(object) {
   // YOUR CODE BELOW HERE //
   //creating an output array to hold pushed object keys
   var objKeys = [];
- for(var key in object){
-    //returning pushed keys into objKeys array
-   objKeys.push(object[key])
+ for(let key in object){
+
+    //pushing keys into objKeys array
+   objKeys.push(key)
   }
+  //returning output array
 return objKeys
   // YOUR CODE ABOVE HERE //
 }

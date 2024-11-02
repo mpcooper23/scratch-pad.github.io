@@ -106,11 +106,11 @@ function getObjectValues(object) {
   //initializing output array to hold object values
   let objVals = [];
   //for-in loop
-  for (let key in obj){
+  for (let key in object){
   //pushing object values to array
 objVals.push(object[key])}
 //printing object values array
-  return console.log(objVals)
+  return objVals
   
   
   // YOUR CODE ABOVE HERE //
@@ -121,14 +121,16 @@ objVals.push(object[key])}
  * using console.log().
  */
 
-//I: 
-//O: 
-//C:
+//I: object
+//O: logging object values
+//C: for-in loop
 //E:
 
 function printObjectValues(object) {
   // YOUR CODE BELOW HERE //
-  
+  for (let key in object){
+    console.log(object[key])
+  }
   
   
   
@@ -139,17 +141,17 @@ function printObjectValues(object) {
  * Given an input Object, return the number of key/value pairs stored within that Object.
  */
 
-//I: 
-//O: 
+//I: Object
+//O: returning how many keys object has
 //C:
 //E:
 
 function getObjectLength(object) {
   // YOUR CODE BELOW HERE //
-  let length = object['key'];
-  console.log(length)
-  
-  
+for (let key in object){
+  return key.length
+}
+
   
   // YOUR CODE ABOVE HERE //
 }

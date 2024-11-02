@@ -206,12 +206,7 @@ return newString
 function join(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
     var args = Array.from(arguments);
-   //initializing output var
-   let newString = stringOne + stringTwo
-//pushing joined string into args
-   newString.push(args)
-    
-return args
+return stringOne + args + stringTwo
 
     // YOUR CODE ABOVE HERE //
 }
@@ -303,10 +298,10 @@ if (stringOne > stringTwo){
 
 function reverseString(string){
     //creating var to hold new reversed string
-let stringReversed = ' ';
+let stringReversed = '';
 //initializing for loop to reverse loop through string, and then push the results to stringReversed var.
-for (let i = string.length - 1; i < 0; i--)
-stringReversed.push(string)
+for (let i = string.length - 1; i >= 0; i--)
+stringReversed.push([i])
 }
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////

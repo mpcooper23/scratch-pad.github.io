@@ -79,14 +79,10 @@ return objKeys
 
 function printObjectKeys(object) {
   // YOUR CODE BELOW HERE //
-   //creating an array to hold pushed object keys
-   var objKeys = [];
    //looping over keys in object
    for(var key in object){
-      //returning pushed keys into objKeys array
-     objKeys.push(object.key)
-     //returning logged output array
-     return console.log(objKeys)
+ //printing output array
+    console.log(key)
       
     }
   

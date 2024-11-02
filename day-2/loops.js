@@ -38,11 +38,10 @@ function printArrayValues(array) {
 function printArrayValuesInReverse(array) {
   // YOUR CODE BELOW HERE //
   //creating for loop to loop backwards over array: start at end of array; 
-  for (let i = array.length - 1; i > 0; i--){
+  for (let i = array.length - 1; i >= 0; i--){
   //logging loops
 console.log(array[i])
   }
-
   // YOUR CODE ABOVE HERE //
 }
 
@@ -56,15 +55,13 @@ console.log(array[i])
 //E:
 function getObjectKeys(object) {
   // YOUR CODE BELOW HERE //
-  //creating an array to hold pushed object keys
+  //creating an output array to hold pushed object keys
   var objKeys = [];
  for(var key in object){
     //returning pushed keys into objKeys array
-   objKeys.push(object.key)
-   return objKeys
-    
+   objKeys.push(object[key])
   }
-
+return objKeys
   // YOUR CODE ABOVE HERE //
 }
 
@@ -74,7 +71,7 @@ function getObjectKeys(object) {
  */
 
 //I: Object
-//O: object keys
+//O: log object keys
 //C: for-in loop
 //E:
 
@@ -82,10 +79,12 @@ function printObjectKeys(object) {
   // YOUR CODE BELOW HERE //
    //creating an array to hold pushed object keys
    var objKeys = [];
+   //looping over keys in object
    for(var key in object){
       //returning pushed keys into objKeys array
      objKeys.push(object.key)
-     return objKeys
+     //returning logged output array
+     return console.log(objKeys)
       
     }
   
@@ -101,17 +100,19 @@ function printObjectKeys(object) {
 
 //I: Object
 //O: array of object values
-//C:
+//C: for-in loop
 //E:
 
 function getObjectValues(object) {
   // YOUR CODE BELOW HERE //
-  //initializing array to hold object values
+  //initializing output array to hold object values
   let objVals = [];
+  //for-in loop
+  for (let key in obj){
   //pushing object values to array
-objVals.push(object['key'])
+objVals.push(object[key])}
 //printing object values array
-  console.log(objVals)
+  return console.log(objVals)
   
   
   // YOUR CODE ABOVE HERE //

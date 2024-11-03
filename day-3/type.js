@@ -13,13 +13,17 @@
  * work?
  * 
  * HINT: There is a method that can help with this.
+ * I: data value
+ * O: boolean 
+ * C: 
+ * E:
  */
 function isArray(value) {
     // YOUR CODE BELOW HERE //
-    
-    console.log(value)
-    
-    
+
+    if (value === value.isArray){
+        return true;
+    }
     // YOUR CODE ABOVE HERE //
 }
 
@@ -35,6 +39,11 @@ function isArray(value) {
  * 
  * HINT: look up how to figure out if something is an instance of the Date object.
  * 
+ * 
+ * I:
+ * O:
+ * C:
+ * E:
  */
 function isObject(value) {
     // YOUR CODE BELOW HERE //

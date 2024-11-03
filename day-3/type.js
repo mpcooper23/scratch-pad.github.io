@@ -15,13 +15,15 @@
  * HINT: There is a method that can help with this.
  * I: data value
  * O: boolean 
- * C: 
+ * C: use an if statement? use array.isarray()
  * E:
  */
 function isArray(value) {
+
     // YOUR CODE BELOW HERE //
-if (value === Array.isArray([]))
-{return true}
+if (typeof value === Array.isArray([])){
+    return true
+    }
     // YOUR CODE ABOVE HERE //
 }
 

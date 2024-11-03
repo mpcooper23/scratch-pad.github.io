@@ -20,10 +20,8 @@
  */
 function isArray(value) {
     // YOUR CODE BELOW HERE //
-
-    if (value === value.isArray){
-        return true;
-    }
+if (value === Array.isArray([]))
+{return true}
     // YOUR CODE ABOVE HERE //
 }
 

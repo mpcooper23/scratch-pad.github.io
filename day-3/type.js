@@ -51,9 +51,9 @@ function isObject(value) {
         return false;
     }else if (value === null){
         return false;
-    }else if (value === typeof Date){
+    }else if (value instanceof Date){
         return false;
-    }else if (value === 'object'){
+    }else if (typeof value === 'object'){
         return true;
     }
 
@@ -70,6 +70,11 @@ function isObject(value) {
  * intended as a collection, false if otherwise.
  * 
  * TIP: Similar to isObject, but we must return true if the value is an Array.
+ * 
+ * I: 
+ * O: 
+ * C:
+ * E:
  */
 function isCollection(value) {
     // YOUR CODE BELOW HERE //
@@ -98,6 +103,12 @@ function isCollection(value) {
  *    typeOf(134) -> "number"
  *    typeOf("javascript") -> "string"
  *    typeOf([1,2,3]) -> "array"
+ * 
+ * 
+ * I: 
+ * O: 
+ * C:
+ * E:
  */ 
 function typeOf(value) {
     // YOUR CODE BELOW HERE //

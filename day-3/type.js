@@ -21,7 +21,7 @@
 function isArray(value) {
 
     // YOUR CODE BELOW HERE //
-if (typeof value === Array.isArray([])){
+if (Array.isArray(value)){
     return true
     }
     // YOUR CODE ABOVE HERE //
@@ -40,14 +40,22 @@ if (typeof value === Array.isArray([])){
  * HINT: look up how to figure out if something is an instance of the Date object.
  * 
  * 
- * I:
- * O:
- * C:
+ * I: value
+ * O: true if value is object
+ * C: if statement to determine object literal and not null, array, or date
  * E:
  */
 function isObject(value) {
     // YOUR CODE BELOW HERE //
-    
+    if (Array.isArray(value)) {
+        return false;
+    }else if (value === null){
+        return false;
+    }else if (value === typeof Date){
+        return false;
+    }else if (value === 'object'){
+        return true;
+    }
 
     
     

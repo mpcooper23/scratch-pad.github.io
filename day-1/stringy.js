@@ -119,19 +119,11 @@ function toDashCase(string) {
 function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
 //forcing string to lowercase
-let result = string.toLowerCase()
+
 //initializing if statement
-if (string.startsWith(char) === true){
+if (string = string.startsWith(char)){
     return true;
-}else {
-    return false
-}
-// initializing if statement to check if the first character of the string
-   // if(string[0] === string.startsWith(char)){
-     //   return true;
-  //  }else{
-     //   return false;
-  //  }
+}else {return false}
 
     // YOUR CODE ABOVE HERE //
 }
@@ -297,11 +289,11 @@ if (stringOne > stringTwo){
 
 
 function reverseString(string){
-    //creating var to hold new reversed string
-let stringReversed = '';
+
 //initializing for loop to reverse loop through string, and then push the results to stringReversed var.
-for (let i = string.length - 1; i >= 0; i--)
-stringReversed.push([i])
+for (let i = string.length - 1; i >= 0; i--){
+string.push(string[i])}
+return string
 }
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////

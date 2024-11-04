@@ -21,9 +21,9 @@
 function isArray(value) {
 
     // YOUR CODE BELOW HERE //
-if (Array.isArray(value)){
-    return true
-    }
+if (Array.isArray(value)) {
+    return true;
+}
     // YOUR CODE ABOVE HERE //
 }
 
@@ -71,15 +71,23 @@ function isObject(value) {
  * 
  * TIP: Similar to isObject, but we must return true if the value is an Array.
  * 
- * I: 
- * O: 
+ * I: value
+ * O: true if value is array or object intended as collection; false otherwise
  * C:
  * E:
  */
 function isCollection(value) {
     // YOUR CODE BELOW HERE //
     
-    
+    if (Array.isArray(value)) {
+        return true;
+    }if (value === null){
+        return false;
+    }if (value instanceof Date){
+        return false;
+    }if (typeof value === 'object'){
+        return true;
+    }
     
     
     // YOUR CODE ABOVE HERE //

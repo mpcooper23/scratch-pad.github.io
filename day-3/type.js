@@ -113,15 +113,30 @@ function isCollection(value) {
  *    typeOf([1,2,3]) -> "array"
  * 
  * 
- * I: 
- * O: 
+ * I: value
+ * O: value of 9 data types returned in string
  * C:
  * E:
  */ 
 function typeOf(value) {
     // YOUR CODE BELOW HERE //
-    
-    
+    if (Array.isArray(value)) {
+        return 'array';
+    }if (value === null){
+        return 'null';
+    }if (value instanceof Date){
+        return 'date';
+    }if (typeof value === isObject){
+        return 'object';
+    }if (typeof value === string){
+        return 'string'
+    }if (typeof value === number){
+        return 'number'
+    }if (typeof value === boolean){
+        return 'boolean'
+    } if (){
+        return 
+    }
     
     
     // YOUR CODE ABOVE HERE //

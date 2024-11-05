@@ -289,13 +289,13 @@ if (stringOne > stringTwo){
 
 
 function reverseString(string){
-let stringRev = ''
+//let stringRev = ''
 //initializing for loop to reverse loop through string, and then push the results to stringReversed var.
 for (let i = string.length - 1; i >= 0; i--){
-stringRev += string[i]}
-return stringRev
+//stringRev += string[i]}
+return string[i]
 }
-
+}
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
 if((typeof process !== 'undefined') &&
     (typeof process.versions.node !== 'undefined')) {

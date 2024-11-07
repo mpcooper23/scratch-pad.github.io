@@ -321,18 +321,6 @@ function reverseString(input) {
 }
 
 
-//I: string
-//O: string reversed
-
-
-function reverseString(string){
-let stringRev = ''
-//initializing for loop to reverse loop through string, and then push the results to stringReversed var.
-for (let i = string.length - 1; i < 0; i--){
-stringRev += [i]}
-return string
-
-}
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
 if((typeof process !== 'undefined') &&
     (typeof process.versions.node !== 'undefined')) {

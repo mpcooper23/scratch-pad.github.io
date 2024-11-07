@@ -113,18 +113,19 @@ function toDashCase(string) {
 
 //I: string data type and characters in string
 //O: boolean
-//C: use beginsWith()
+//C: use startsWith(); account for case insensitivity. 
 //E:
 
 function beginsWith(string, char) {
     // YOUR CODE BELOW HERE //
-//forcing string to lowercase
-
-//initializing if statement
-if (string = string.startsWith(char)){
-    return true;
-}else {return false}
-
+//using conditional if statement to check if first 
+//character on input string is strictly equal to the inputted char;
+//used toLowerCase() to account for case insensitivity 
+    if (string[0].toLowerCase() === char.toLowerCase()){
+        return true;
+    }else {
+        return false;
+    }
     // YOUR CODE ABOVE HERE //
 }
 
@@ -149,7 +150,11 @@ if (string = string.startsWith(char)){
 function endsWith(string, char) {
     // YOUR CODE BELOW HERE //
 //accounting for to lower case
-string.endsWith(string, char)
+if (string[string.length - 1].toLowerCase() === char.toLowerCase()){
+    return true;
+}else {
+    return false;
+}
 // initializing if statement to check if the last character of the string matches inputted char
 //if(string.length - 1 === string.endsWith(char)){
   //  return true;
@@ -190,16 +195,16 @@ return newString
  *      in an Array called args.
  */
 
-//I: any number of strings
-//O: all strings joined
+//I: stringOne, stringTwo
+//O: two strings joined
 //C:
 //E:
 
 function join(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
     var args = Array.from(arguments);
-return stringOne + args + stringTwo
-
+  
+return stringOne + stringTwo 
     // YOUR CODE ABOVE HERE //
 }
 
@@ -284,17 +289,49 @@ if (stringOne > stringTwo){
     // YOUR CODE ABOVE HERE //
 }
 
+/**
+ * 1: reverseString()
+ *
+ *  a. Create a function called reverseString that takes a 
+ *  String as its only input and returns a new String 
+ *  representing the input String reversed.  For example:
+ *  
+ *      reverseString('hello');  // => 'olleh'
+ * 
+ * TIPS:
+ *  a. create something to collect the output you'll return.
+ *  b. you'll need a loop, which one is best? How do you know 
+ *     when to stop looping?
+ *  c. how do you access individual characters of a String?
+ *  d. how do you concatenate Strings? What operator do we use?
+ */
+
+function reverseString(input) {
+    // YOUR CODE GOES BELOW HERE //
+    //creating output string
+    let stringRev = ''
+    //creating for loop to iterate through input array backwards
+    for (let i = input.length - 1; i >= 0; i--){
+        //adding iterated values to the output string
+        stringRev += input[i]
+        //returning output string
+     } return stringRev
+    
+    // YOUR CODE GOES ABOVE HERE //
+}
+
+
 //I: string
 //O: string reversed
 
 
 function reverseString(string){
-//let stringRev = ''
+let stringRev = ''
 //initializing for loop to reverse loop through string, and then push the results to stringReversed var.
-for (let i = string.length - 1; i >= 0; i--){
-//stringRev += string[i]}
-return string[i]
-}
+for (let i = string.length - 1; i < 0; i--){
+stringRev += [i]}
+return string
+
 }
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
 if((typeof process !== 'undefined') &&

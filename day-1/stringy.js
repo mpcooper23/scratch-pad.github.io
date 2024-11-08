@@ -306,7 +306,7 @@ if (stringOne > stringTwo){
  *  d. how do you concatenate Strings? What operator do we use?
  */
 
-function reverseString(input) {
+/*function reverseString(input) {
     // YOUR CODE GOES BELOW HERE //
     //creating output string
     let stringRev = ''
@@ -318,8 +318,23 @@ function reverseString(input) {
      } return stringRev
     
     // YOUR CODE GOES ABOVE HERE //
-}
+}*/
 
+function reverseString(input) {
+    // YOUR CODE GOES BELOW HERE //
+    //creating output string
+    let stringRev = ''
+    //creating for loop to iterate through input array backwards
+    for (let i = input.length - 1; i >= 0; i--){
+      //console.log(input[i])
+        //adding iterated values to the output string
+        stringRev += input[i]
+        //returning output string
+     } return stringRev
+    
+    // YOUR CODE GOES ABOVE HERE //
+}
+//console.log(reverseString('hello'))
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
 if((typeof process !== 'undefined') &&

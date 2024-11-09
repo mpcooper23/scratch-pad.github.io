@@ -21,9 +21,11 @@
 function isArray(value) {
 
     // YOUR CODE BELOW HERE //
-if (Array.isArray(value)) {
-    return true;
-}
+if(Array.isArray(value)) return true
+
+//if (typeof value === Array.isArray([])) {
+ //   return true;
+
     // YOUR CODE ABOVE HERE //
 }
 
@@ -47,13 +49,13 @@ if (Array.isArray(value)) {
  */
 function isObject(value) {
     // YOUR CODE BELOW HERE //
-    if (Array.isArray(value)) {
+    if (Array.isArray(value)) 
         return false;
-    }else if (value === null){
+   if (value === null)
         return false;
-    }else if (value instanceof Date){
+   if (value instanceof Date)
         return false;
-    }else if (typeof value === 'object'){
+    if (typeof value === 'object'){
         return true;
     }
 

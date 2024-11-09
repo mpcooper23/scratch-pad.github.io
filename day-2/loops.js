@@ -148,11 +148,10 @@ function printObjectValues(object) {
 
 function getObjectLength(object) {
   // YOUR CODE BELOW HERE //
-for (let key in object){
-  return key.length
-}
+for( let key in object){
+  return object[key].length}
 
-  
+
   // YOUR CODE ABOVE HERE //
 }
 

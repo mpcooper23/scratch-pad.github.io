@@ -15,19 +15,21 @@
 */
 function fizzBuzz() {
     // YOUR CODE GOES BELOW HERE //
-    //initializing var array to contain numbers
+    //initializing output array to contain numbers
+   let numbers = []
 //creating for loop to loop through numbers
 for(let i = 1; i <= 100; i++){
     //creating conditional if statement to pull multiples of three, then five, and finally 3 && 5
-    if ([i] % 3 === 0){
+    if (i % 3 === 0){
         return console.log("Fizz")
-    }if ([i] % 5 === 0){
+    }if (i % 5 === 0){
         return console.log("Buzz")
-    }if ([i] % 3 === 0 && numbers[i] % 5 === 0){
+    }if (i % 3 === 0 && i % 5 === 0){
         return console.log("FizzBuzz")
+        numbers.push(i)
     }
 }
-    return [i]
+    return numbers
     // YOUR CODE GOES ABOVE HERE //
 }
 

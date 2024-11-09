@@ -15,19 +15,27 @@
  * HINT: There is a method that can help with this.
  * I: data value
  * O: boolean 
- * C: use an if statement? use array.isarray()
+ * C: use an if statement & use array.isarray(value)
  * E:
  */
+
 function isArray(value) {
-
     // YOUR CODE BELOW HERE //
-if(Array.isArray(value)) return true
-
-//if (typeof value === Array.isArray([])) {
- //   return true;
-
+    //initializing if statemnent and plugging in .isArray(value) method
+if (Array.isArray(value)) {
+    return true
+}else {return false}
     // YOUR CODE ABOVE HERE //
 }
+//initialing array to test
+let array = [1, 2, 'hey'];
+//initializing number to test
+let number = 5;
+//logging function invocation
+console.log(isArray(number));//returns false
+console.log(isArray(array));//returns true
+
+
 
 
 

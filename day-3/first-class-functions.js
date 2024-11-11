@@ -19,9 +19,14 @@
  */
 function createGreaterThanFilter(base) {
     // YOUR CODE BELOW HERE //
-    
+      // YOUR CODE BELOW HERE //
+    //creating filt function expression
+ let filt = function filter() {
+    if (value > base) {
+    return true}
+}
+   return filt 
    
-    
     // YOUR CODE ABOVE HERE //
 }
 
@@ -37,7 +42,7 @@ function createLessThanFilter(base) {
     // YOUR CODE BELOW HERE //
     //creating filt function expression
  let filt = function filter() {
-    if (value > base) {
+    if (value < base) {
     return true}
 }
    return filt 

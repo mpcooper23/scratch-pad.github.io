@@ -11,9 +11,9 @@
  * return a Function that tests whether a given value is greater than the 
  * base.
  * 
- * I:
- * O:
- * C:
+ * I: input "base" could be string or number
+ * O: returning function that tests condition of value being greater than the base.
+ * C: return function
  * E:
  * 
  */
@@ -30,13 +30,17 @@ function createGreaterThanFilter(base) {
  * return a Function that tests whether a given value is less than the 
  * base. (test means return true or false)
  * 
+ * 
+ * 
  */
 function createLessThanFilter(base) {
     // YOUR CODE BELOW HERE //
     
+ let filt = function filter {if (value > base) {
+    return true}}
   
     
-    
+   return filt 
     // YOUR CODE ABOVE HERE //
 }
 

@@ -20,7 +20,7 @@ function fizzBuzz(num) {
   
 //creating for loop to loop through numbers
 for(let num = 1; num <= 100; num++){
-  let output = ''
+  let output = '';
     //nesting conditional if statement to pull multiples of three, then five, and finally 3 && 5
     if (num % 3 === 0){
       output += "Fizz"
@@ -36,7 +36,7 @@ for(let num = 1; num <= 100; num++){
 }
 //console.log(fizzBuzz())
 
-console.log(fizzBuzz(100))
+
 
 
 

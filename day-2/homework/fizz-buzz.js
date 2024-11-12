@@ -14,7 +14,6 @@
  * O: printing 1 - 100 with "Fizz" assigned to any multiples of 3, multiples of 5 print "FizzBuzz"
 */
 
-*/
 function fizzBuzz(num) {
     
     //initializing output array to contain numbers?

@@ -13,25 +13,31 @@
  * I: numbers data
  * O: printing 1 - 100 with "Fizz" assigned to any multiples of 3, multiples of 5 print "FizzBuzz"
 */
-function fizzBuzz() {
-    // YOUR CODE GOES BELOW HERE //
-    //initializing output array to contain numbers
-   let numbers = []
+
+*/
+function fizzBuzz(num) {
+    
+    //initializing output array to contain numbers?
+  
 //creating for loop to loop through numbers
-for(let i = 1; i <= 100; i++){
-    //creating conditional if statement to pull multiples of three, then five, and finally 3 && 5
-    if (i % 3 === 0){
-        return console.log("Fizz")
-    }if (i % 5 === 0){
-        return console.log("Buzz")
-    }if (i % 3 === 0 && i % 5 === 0){
-        return console.log("FizzBuzz")
-        numbers.push(i)
+for(let num = 1; num <= 100; num++){
+  let output = ''
+    //nesting conditional if statement to pull multiples of three, then five, and finally 3 && 5
+    if (num % 3 === 0){
+      output += "Fizz"
+    }else if (num % 5 === 0){
+       output += "Buzz"
+    }else if (num % 3 === 0 && num % 5 === 0){
+       output += "FizzBuzz";
     }
+  return output
 }
-    return numbers
+   
     // YOUR CODE GOES ABOVE HERE //
 }
+//console.log(fizzBuzz())
+
+console.log(fizzBuzz(100))
 
 
 

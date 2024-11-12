@@ -25,7 +25,7 @@ function createGreaterThanFilter(base) {
     if (value > base) {
     return true}
 }
-   return filt 
+   return filt() 
    
     // YOUR CODE ABOVE HERE //
 }

@@ -28,12 +28,12 @@ if (Array.isArray(value)) {
     // YOUR CODE ABOVE HERE //
 }
 //initialing array to test
-let array = [1, 2, 'hey'];
+//let array = [1, 2, 'hey'];
 //initializing number to test
-let number = 5;
+///let number = 5;
 //logging function invocation
-console.log(isArray(number));//returns false
-console.log(isArray(array));//returns true
+//console.log(isArray(number));//returns false
+//console.log(isArray(array));//returns true
 
 
 
@@ -138,16 +138,15 @@ function typeOf(value) {
         return 'date';
     }if (typeof value === isObject){
         return 'object';
-    }if (typeof value === string){
+    }if (typeof value === 'string'){
         return 'string'
-    }if (typeof value === number){
+    }if (typeof value === 'number'){
         return 'number'
-    }if (typeof value === boolean){
+    }if (typeof value === 'boolean'){
         return 'boolean'
-    } if (){
-        return 
-    }
-    
+    } if (value instanceof Date){
+        return 'Date'
+    }else{return 'function'}
     
     // YOUR CODE ABOVE HERE //
 }

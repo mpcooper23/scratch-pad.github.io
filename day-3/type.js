@@ -57,17 +57,15 @@ if (Array.isArray(value)) {
  */
 function isObject(value) {
     // YOUR CODE BELOW HERE //
-    if (Array.isArray(value)) 
+    if (Array.isArray(value)){
         return false;
-   if (value === null)
+}if (value === 'null'){
         return false;
-   if (value instanceof Date)
-        return false;
+ } if (value instanceof Date){
+        return false;}
     if (typeof value === 'object'){
         return true;
     }
-
-    
     
     
     // YOUR CODE ABOVE HERE //

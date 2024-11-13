@@ -51,21 +51,22 @@ if (Array.isArray(value)) {
  * 
  * 
  * I: unknown value
- * O: true if value is object
- * C: if statement to determine object literal and not null, array, or date
+ * O: true if value is object with key:value pairs
+ * C: if statement to determine if value is object as collection and not null, array, or date
  * E:
  */
 function isObject(value) {
     // YOUR CODE BELOW HERE //
- //   if (Array.isArray(value)){
-//        return false;
-//}if (value === 'null'){
-//        return false;
- //} if (value instanceof Date){
- //       return false;}
-    if (typeof value === 'object'){
+
+    if (Array.isArray(value)) {
+        return false;
+    }if (value === null){
+        return false;
+    }if (value instanceof Date){
+        return false;
+    }if (typeof value === 'object'){
         return true;
-    }
+    }else {return false}
     
     // YOUR CODE ABOVE HERE //
 }
@@ -94,7 +95,7 @@ function isCollection(value) {
         return false;
     }if (typeof value === 'object'){
         return true;
-    }
+    }else {return false}
     
     
     // YOUR CODE ABOVE HERE //

@@ -19,13 +19,14 @@
  */
 function createGreaterThanFilter(base) {
     // YOUR CODE BELOW HERE //
-    
+    //creating an if statement to determine if base is string or number
+    if (base === 'string' || base === 'number'){
     //creating filt function expression
  let filt = function filter() {
     if (value > base) {
     return true}
-}
-   return filt() 
+
+   return filter }}
    
     // YOUR CODE ABOVE HERE //
 }

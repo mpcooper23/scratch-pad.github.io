@@ -19,14 +19,9 @@
  */
 function createGreaterThanFilter(base) {
     // YOUR CODE BELOW HERE //
-    //creating an if statement to determine if base is string or number
-    if (base === 'string' || base === 'number'){
-    //creating filt function expression
- let filt = function filter() {
-    if (value > base) {
-    return true}
-
-   return filter }}
+return function(num){
+    return num > base
+}
    
     // YOUR CODE ABOVE HERE //
 }
@@ -44,12 +39,10 @@ function createGreaterThanFilter(base) {
  */
 function createLessThanFilter(base) {
     // YOUR CODE BELOW HERE //
-    //creating filt function expression
- let filt = function filter() {
-    if (value < base) {
-    return true}
-}
-   return filt 
+    return function(num){
+        return num < base
+    }
+
     // YOUR CODE ABOVE HERE //
 }
 
@@ -59,10 +52,30 @@ function createLessThanFilter(base) {
  * character.
  * 
  * This function needs to be case insensitive.
+ * 
+ * I: single character
+ * O: function that tests whether given string starts with character
+ * C: needs to be case insensitive, use startsWith() string method
+ * E:
+ * 
+ * 
  */
 function createStartsWithFilter(startsWith) {
     // YOUR CODE BELOW HERE //
-    
+
+    //returning function that tests whether string value starts with char
+    return function startsWith(string, char) {
+        // YOUR CODE BELOW HERE //
+    //using conditional if statement to check if first 
+    //character on input string is strictly equal to the inputted char;
+    //used toLowerCase() to account for case insensitivity 
+        if (string[0].toLowerCase().startsWith(char.toLowerCase())){
+            return true;
+        }else {
+            return false;
+        }
+        // YOUR CODE ABOVE HERE //
+    }
     
     
     
@@ -75,12 +88,26 @@ function createStartsWithFilter(startsWith) {
  * character.
  * 
  * This function needs to be case insensitive.
+ * 
+ * I: endsWith char
+ * O: function that tests whether input string ends with input char
+ * C:
+ * E:
  */
 function createEndsWithFilter(endsWith) {
     // YOUR CODE BELOW HERE //
     
-    
-    
+    return function endsWith(string, char) {
+        // YOUR CODE BELOW HERE //
+    //using conditional if statement to check if first 
+    //character on input string is strictly equal to the inputted char;
+    //used toLowerCase() to account for case insensitivity 
+        if (string[string.length - 1].toLowerCase() === char.toLowerCase()){
+            return true;
+        }else {
+            return false;
+        }
+    }
     
     // YOUR CODE ABOVE HERE //
 }

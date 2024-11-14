@@ -131,9 +131,6 @@ function printObjectValues(object) {
   for (let key in object){
     console.log(object[key])
   }
-  
-  
-  
   // YOUR CODE ABOVE HERE //
 }
 
@@ -142,16 +139,17 @@ function printObjectValues(object) {
  */
 
 //I: Object
-//O: returning how many keys object has
+//O: returning count of how many keys object has
 //C:
 //E:
 
 function getObjectLength(object) {
   // YOUR CODE BELOW HERE //
-for( let key in object){
-  return object[key].length}
+  let count = 0
+for(let key in object){
+  count++}
 
-
+return count
   // YOUR CODE ABOVE HERE //
 }
 
@@ -162,17 +160,24 @@ for( let key in object){
 
 //I: object
 //O: print object values in reverse
-//C: reverse for-in loop
+//C: reverse for loop and output array
 //E:
 
 function printObjectValuesInReverse(object) {
   // YOUR CODE BELOW HERE //
-  for (let key in object){
-    console.log(object.key)
-  }
+//create output array to hold for loop iterations
+  let output = [];
+  //for-in loop to iterate over object and isolate keys
+  for(let key in object){
+    //adding each key to output array
+    output.push(object[key])}
   
-  
-  
+  //for loop to iterate over output array 
+  for (let i = output.length - 1; i >= 0; i--){
+    //pushing iterations to output array and logging them
+    console.log(output[i])
+}
+ 
   // YOUR CODE ABOVE HERE //
 }
 

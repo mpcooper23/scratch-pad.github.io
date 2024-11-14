@@ -61,7 +61,6 @@ function createLessThanFilter(base) {
  * 
  */
 function createStartsWithFilter(startsWith) {
-    // YOUR CODE BELOW HERE //
 
     //returning function that tests whether string value starts with char
     return function startsWith(string, char) {
@@ -74,12 +73,7 @@ function createStartsWithFilter(startsWith) {
         }else {
             return false;
         }
-        // YOUR CODE ABOVE HERE //
     }
-    
-    
-    
-    // YOUR CODE ABOVE HERE //
 }
 
 /** 

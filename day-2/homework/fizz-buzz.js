@@ -14,31 +14,23 @@
  * O: printing 1 - 100 with "Fizz" assigned to any multiples of 3, multiples of 5 print "FizzBuzz"
 */
 
-function fizzBuzz(num) {
-    
-    //initializing output array to contain numbers?
+function fizzBuzz() {
   
-//creating for loop to loop through numbers
-for(let num = 1; num <= 100; num++){
-  let output = '';
-    //nesting conditional if statement to pull multiples of three, then five, and finally 3 && 5
-    if (num % 3 === 0){
-      output += "Fizz"
-    }else if (num % 5 === 0){
-       output += "Buzz"
-    }else if (num % 3 === 0 && num % 5 === 0){
-       output += "FizzBuzz";
-    }
-  return output
-}
-   
-    // YOUR CODE GOES ABOVE HERE //
-}
-//console.log(fizzBuzz())
-
-
-
-
+  for(let num = 1; num <= 100; num++){
+      //conditions 1, 2, 3
+      if (num % 3 === 0 && num % 5 === 0){
+          console.log("FizzBuzz")
+      }else if (num % 3 === 0){
+          console.log("Fizz")
+      }else if (num % 5 === 0){
+        console.log("Buzz");
+      }else {
+        console.log(num)
+      }
+  }
+  }
+  
+  console.log(fizzBuzz(100))
 
 
 

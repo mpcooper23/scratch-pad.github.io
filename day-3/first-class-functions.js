@@ -73,7 +73,7 @@ function createStartsWithFilter(startsWith) {
         }else {
             return false;
         }
-        //return startsWith
+        
     }
 }
 
@@ -129,8 +129,14 @@ function modifyStrings(strings, modify) {
     // YOUR CODE ABOVE HERE //
 }
 
-
-
+var uppercase = modifyStrings(['alex', 'francis'], function(string)
+{
+ return string.toUpperCase();
+}); // ['ALEX', 'FRANCIS']
+ 
+var addedExclamation = modifyStrings(['alex', 'francis'], function(string)
+{return string + "!";
+}); //['alex!', 'francis!']
 
 /** 
  * Given an Array of Strings and a Function designed to test the String in some 

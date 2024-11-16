@@ -116,9 +116,15 @@ function createEndsWithFilter(endsWith) {
  */
 function modifyStrings(strings, modify) {
     // YOUR CODE BELOW HERE //
+    //creating outlet array
+    let modified = [];
+    //for loop to iterate through strings array
+    for(let i = 0; i > strings.length; i++){
+       modify(strings[i]); // Modifying strings with inner-function invocation
+   modified.push(strings[i]) //collecting results by pushing them to outlet arr. 
+    }
     
-    
-    
+    return modified//returning modified strings in array
     
     // YOUR CODE ABOVE HERE //
 }

@@ -134,12 +134,30 @@ function modifyStrings(strings, modify) {
  * begin with "C", or they are all exclaimations that end with "!".
  * 
  * TIP: You need to loop over the Strings, right? And pass them to the test?
+ * 
+ * 
+ * I: parameter 1: array of strings, parameter 2: function that tests strings parameter
+ * O: boolean: true, if all strings pass; false, if not
+ * C: "tests" output array, for loop to iterate through strings, conditional statement to test, console.log to print boolean results
+ * E:
+ * 
  */
 function allStringsPass(strings, test) {
     // YOUR CODE BELOW HERE //
-    
-    
-    
+    //output array to hold true results of test
+    let trues = [];
+// for loop to iterate through input string
+for(let i = 0; i < strings.length; i++){
+    if(test(strings[i]) === true){//conditional to check if strings in array have true test results
+        trues.push(strings[i])//pushing trues to output array
+    }
+}
+   //how can I use this array to determine if all the strings passed or not? 
+    if(trues.length === strings.length){
+        return true;
+    }else {
+        return false;
+    }
     
     // YOUR CODE ABOVE HERE //
 }

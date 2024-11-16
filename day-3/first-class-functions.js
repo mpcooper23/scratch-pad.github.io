@@ -73,6 +73,7 @@ function createStartsWithFilter(startsWith) {
         }else {
             return false;
         }
+        //return startsWith
     }
 }
 

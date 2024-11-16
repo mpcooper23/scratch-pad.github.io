@@ -174,8 +174,13 @@ for(let i = 0; i < strings.length; i++){
     // YOUR CODE ABOVE HERE //
 }
 
+var beginsWithA = allStringsPass(['alex', 'aaron'], function(str){
+    return str[0] === 'a';
+}); //true (because all strings start with A)
 
-
+var fiveOrMoreLetters = allStringsPass(['alex', 'aaron'], function(str){
+    return str.length > 5;
+}) // false because 'alex' in length is less than 5
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
 if((typeof process !== 'undefined') &&

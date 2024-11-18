@@ -68,13 +68,12 @@ function createStartsWithFilter(startsWith) {
     //using conditional if statement to check if first 
     //character on input string is strictly equal to the inputted char;
     //used toLowerCase() to account for case insensitivity 
-        if (string[0].toLowerCase().startsWith(char.toLowerCase())){
-            return true;
-        }else {
-            return false;
-        }
-        
+    if (string[0].toLowerCase() === char.toLowerCase()){
+        return true;
+    }else {
+        return false;
     }
+}
 }
 
 /** 

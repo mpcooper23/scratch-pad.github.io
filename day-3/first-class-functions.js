@@ -57,25 +57,21 @@ function createLessThanFilter(base) {
  * O: function that tests whether given string starts with character
  * C: needs to be case insensitive, use startsWith() string method
  * E:
- * 
- * 
  */
 function createStartsWithFilter(startsWith) {
-
     //returning function that tests whether string value starts with char
     return function startsWith(string, char) {
-        // YOUR CODE BELOW HERE //
-    //using conditional if statement to check if first 
-    //character on input string is strictly equal to the inputted char;
-    //used toLowerCase() to account for case insensitivity 
+    /*using if statement to check if first character on input string 
+    is strictly equal to the inputted char; used toLowerCase() to account for 
+    case insensitivity*/
     if (string[0].toLowerCase() === char.toLowerCase()){
         return true;
     }else {
         return false;
     }
+  }
 }
-}
-
+console.log(char)
 /** 
  * Given a endsWith character, which will be a single character, return a 
  * Function that tests whether a given String ends with the endsWith 

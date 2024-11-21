@@ -151,30 +151,27 @@ var addedExclamation = modifyStrings(['alex', 'francis'], function(string)
  */
 function allStringsPass(strings, test) {
     // YOUR CODE BELOW HERE //
-    //output array to hold true results of test
     let trues = [];
-// for loop to iterate through input string
 for(let i = 0; i < strings.length; i++){
-    if(test(strings[i]) === true){//conditional to check if strings in array have true test results
-        trues.push(strings[i])//pushing trues to output array
+    if(test(strings[i]) === true){
+        trues.push(strings[i])
     }
-}
-   //how can I use this array to determine if all the strings passed or not? 
-    if(trues.length === strings.length){
+}   if(trues.length === strings.length){
         return true;
     }else {
         return false;
     }
+
     // YOUR CODE ABOVE HERE //
 }
 
-var beginsWithA = allStringsPass(['alex', 'aaron'], function(str){
+/*var beginsWithA = allStringsPass(['alex', 'aaron'], function(str){
     return str[0] === 'a';
 }); //true (because all strings start with A)
 
 var fiveOrMoreLetters = allStringsPass(['alex', 'aaron'], function(str){
-    return str.length > 5;
-}) // false because 'alex' in length is less than 5
+   return str.length > 5;
+}) // false because 'alex' in length is less than 5*/
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
 if((typeof process !== 'undefined') &&

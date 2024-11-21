@@ -18,9 +18,9 @@
  * 
  */
 function createGreaterThanFilter(base) {
-    // YOUR CODE BELOW HERE //
+    //YOUR CODE BELOW HERE //
 return function(num){
-    return num > base
+  return num > base
 }
    
     // YOUR CODE ABOVE HERE //
@@ -39,9 +39,9 @@ return function(num){
  */
 function createLessThanFilter(base) {
     // YOUR CODE BELOW HERE //
-    return function(num){
-        return num < base
-    }
+   return function(num){
+       return num < base
+ }
 
     // YOUR CODE ABOVE HERE //
 }
@@ -60,18 +60,18 @@ function createLessThanFilter(base) {
  */
 function createStartsWithFilter(startsWith) {
     //returning function that tests whether string value starts with char
-    return function startsWith(string, char) {
+   // return function startsWith(string, char) {
     /*using if statement to check if first character on input string 
     is strictly equal to the inputted char; used toLowerCase() to account for 
     case insensitivity*/
-    if (string[0].toLowerCase() === char.toLowerCase()){
-        return true;
-    }else {
-        return false;
-    }
-  }
+   // if (string[0].toLowerCase() === char.toLowerCase()){
+   //     return true;
+   // }else {
+ //       return false;
+//    }
+ // }
 }
-console.log(char)
+
 /** 
  * Given a endsWith character, which will be a single character, return a 
  * Function that tests whether a given String ends with the endsWith 
@@ -87,20 +87,20 @@ console.log(char)
 function createEndsWithFilter(endsWith) {
     // YOUR CODE BELOW HERE //
     
-    return function endsWith(string, char) {
+   // return function endsWith(string, char) {
         // YOUR CODE BELOW HERE //
     //using conditional if statement to check if first 
     //character on input string is strictly equal to the inputted char;
     //used toLowerCase() to account for case insensitivity 
-        if (string[string.length - 1].toLowerCase() === char.toLowerCase()){
-            return true;
-        }else {
-            return false;
-        }
+       // if (string[string.length - 1].toLowerCase() === char.toLowerCase()){
+      //      return true;
+      //  }else {
+        //    return false;
+     //   }
     }
     
     // YOUR CODE ABOVE HERE //
-}
+//}
 
 /** 
  * Given an Array of Strings and a Function designed to modify a String, 
@@ -165,7 +165,6 @@ for(let i = 0; i < strings.length; i++){
     }else {
         return false;
     }
-    
     // YOUR CODE ABOVE HERE //
 }
 

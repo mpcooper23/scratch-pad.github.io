@@ -204,7 +204,8 @@ function join(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
     var args = Array.from(arguments);
   
-return stringOne.concat(stringTwo)
+return `${stringOne} ${stringTwo} ${args}`
+console.log(args)
     // YOUR CODE ABOVE HERE //
 }
 

@@ -63,11 +63,11 @@ function createStartsWithFilter(startsWith) {
    return function (string) {
     if (string.toLowerCase().startsWith()){
         return true;
-    }else return false;
+    }else {return false;
   }  
 
 }
-
+}
 /** 
  * Given a endsWith character, which will be a single character, return a 
  * Function that tests whether a given String ends with the endsWith 

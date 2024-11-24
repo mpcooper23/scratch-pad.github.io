@@ -61,11 +61,10 @@ function createLessThanFilter(base) {
 function createStartsWithFilter(startsWith) {
     //returning function that tests whether string value starts with char
    return function (string) {
-    if (string.toLowerCase().startsWith()){
+    if (string[0].toLowerCase() === startsWith.toLowerCase()){
         return true;
     }else {return false;
   }  
-
 }
 }
 /** 

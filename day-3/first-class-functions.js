@@ -60,12 +60,12 @@ function createLessThanFilter(base) {
  */
 function createStartsWithFilter(startsWith) {
     //returning function that tests whether string value starts with char
-   return function (string) {
-    if (string[0].toLowerCase() === startsWith.toLowerCase()){
-        return true;
-    }else {return false;
-  }  
-}
+    return function (string) {
+        if (string[0].toLowerCase() === startsWith.toLowerCase()){
+            return true;
+        }else {return false;
+      }  
+    }
 }
 /** 
  * Given a endsWith character, which will be a single character, return a 
@@ -82,20 +82,15 @@ function createStartsWithFilter(startsWith) {
 function createEndsWithFilter(endsWith) {
     // YOUR CODE BELOW HERE //
     
-   // return function endsWith(string, char) {
-        // YOUR CODE BELOW HERE //
-    //using conditional if statement to check if first 
-    //character on input string is strictly equal to the inputted char;
-    //used toLowerCase() to account for case insensitivity 
-       // if (string[string.length - 1].toLowerCase() === char.toLowerCase()){
-      //      return true;
-      //  }else {
-        //    return false;
-     //   }
+    return function (string) {
+        if (string[string.length - 1].toLowerCase() === endsWith.toLowerCase()){
+            return true;
+        }else {return false;
+      }  
     }
     
     // YOUR CODE ABOVE HERE //
-//}
+}
 
 /** 
  * Given an Array of Strings and a Function designed to modify a String, 
@@ -109,8 +104,7 @@ function modifyStrings(strings, modify) {
     //creating outlet array
     let modified = [];
     //for loop to iterate through strings array
-    for(let i = 0; i > strings.length; i++){
-       modify(strings[i]); // Modifying strings with inner-function invocation
+    for(let i = 0; i > strings.length; i++){modify(strings[i]) // Modifying strings with inner-function invocation
    modified.push(strings[i]) //collecting results by pushing them to outlet arr. 
     }
     

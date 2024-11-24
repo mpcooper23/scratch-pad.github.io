@@ -105,8 +105,8 @@ function modifyStrings(strings, modify) {
     let modified = [];
     //for loop to iterate through strings array
     for(let i = 0; i < strings.length; i++){
-        modify(strings[i]) // Modifying strings with inner-function invocation
-   modified.push(strings[i]) //collecting results by pushing them to outlet arr. 
+       let mod = modify(strings[i]) // Modifying strings with inner-function invocation
+   modified.push(mod) //collecting results by pushing them to outlet arr. 
     }
     
     return modified//returning modified strings in array

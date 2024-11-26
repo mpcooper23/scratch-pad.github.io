@@ -56,11 +56,18 @@ function makeContactList() {
         return contacts.length;
        },
        addContact: function(){
-        concacts.push(contact);
+        contacts.push(contacts);
        },
        findContact: function(fullName){
-       return contacts.firstName + ' ' + contacts.lastName
+       return contacts.firstName + ' ' + contacts['lastName'];
+//needs conditional to determine if user exists (return undefined, if no; full name, if so)
        },
+       removeContact: function(){
+       delete contacts.fullName
+       },
+       printAllContactNames: function(){
+ //needs a for loop to iterate through contacts
+       }
     }
 }
 

@@ -20,17 +20,27 @@
  *  a. create something to collect the output you'll return.
  *  b. you'll need a loop, which one is best?
  *  c. you'll wanna make use of the push() method of Array.
+ * 
+ * I: two num data parameters
+ * O: returns array with intergers contained between inputs
+ * C:
+ * E:
+ * 
  */
 function range(start, end) {
     // YOUR CODE GOES BELOW HERE //
     //output array
     let output = [];
     //for loop to iterate
-    for(let i = 0; i < array.length; i++){
+    for(let i = start; i < end; i++){
 //creating if statement to check if the first value is greater than the second
-
+if(start > end){
+    output.push(end, start)
+}else if (start < end){
+    output.push(start, end)
+}
     }
-    
+    return output 
     
     // YOUR CODE GOES ABOVE HERE //
 }

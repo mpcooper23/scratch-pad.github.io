@@ -23,6 +23,8 @@
  * 
  * I: two num data parameters
  * O: returns array with intergers contained between inputs
+ *    use output array and slice to create the inputted arguments
+ *    (i.e. start and end)
  * C:
  * E:
  * 
@@ -32,7 +34,7 @@ function range(start, end) {
     //output array
     let output = [];
     //for loop to iterate
-    for(let i = start; i < end; i++){
+    for(let i = 0; i < array.length; i++){
 //creating if statement to check if the first value is greater than the second
 if(start > end){
     output.push(end, start)

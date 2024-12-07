@@ -30,22 +30,25 @@
  * 
  */
 function range(start, end) {
-    // YOUR CODE GOES BELOW HERE //
     //output array
     let output = [];
-    //for loop to iterate
-    for(let i = start; i < end; i++){
-//creating if statement to check if the first value is greater than the second
-if(start > end){
-    output.push(end, start)
-}else if (start < end){
-    output.push(start, end)
-}
-    }
-    return output 
-    
-    // YOUR CODE GOES ABOVE HERE //
-}
+    //FIRST: set up conditionals
+       //creating if statement to check if the "end" 
+         //value is greater than the "start"
+    //SECOND: if statement to check if "end" < "start"
+if(start <= end){
+    for(let i = start; i <= end; i++){//set loop at "start"; iterate up to "end"
+    output.push(i)}
+}else if (start >= end){
+    for(let i = start; i >= end; i--)//set loop at "start" again; only this time,
+    output.push(i)                      //decrement to access elements in reverse
+}                                    //push "i", which represents each interger value
+    return output                      // NOT "start[i]" which would access the value for
+}                                        //an array or string. Since start is number data,
+                                           // using "i" correctly isolates the integer value
+
+
+//console.log(range(2, 10)) ==> 
 
 
 

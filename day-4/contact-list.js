@@ -56,17 +56,30 @@ function makeContactList() {
         return contacts.length;
        },
        addContact: function(){
-        contacts.push(contacts);
+        contacts.push(contact);
        },
        findContact: function(fullName){
-       return contacts.firstName + ' ' + contacts['lastName'];
-//needs conditional to determine if user exists (return undefined, if no; full name, if so)
+       for(let i = 0; i < contacts.length; i++){ 
+          let contactFullName = contacts[i].nameFirst + ' ' + contacts[i].nameLast;   
+       if(contactFullName === fullName){
+       return contacts[i];//if, so return fullName
+       }
+    }
+       return undefined;//(return undefined, if no
        },
-       removeContact: function(){
-       delete contacts.fullName
+       removeContact: function(contact){
+        for (let i = 0; i < contacts.length; i++){
+if (contacts[i] === contact){
+    contacts.splice(i, 1);
+    break;
+}
+        }
        },
        printAllContactNames: function(){
  //needs a for loop to iterate through contacts
+ let allNames = ''
+ for(let i = 0; i < contacts.length; i++){
+    allNames += contacts[i].nameFirst + ' ' + contacts[i].nameLast;)
        }
     }
 }

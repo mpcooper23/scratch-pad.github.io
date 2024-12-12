@@ -55,18 +55,20 @@ function makeContactList() {
        length: function(){
         return contacts.length;
        },
-       addContact: function(){
-        contacts.push(contacts);
+       addContact: function(contact){
+        contacts.push(contact);
        },
+
        findContact: function(fullName){
        for(let i = 0; i < contacts.length; i++){ 
           let contactFullName = contacts[i].nameFirst + ' ' + contacts[i].nameLast;   
        if(contactFullName === fullName){
-       return contacts[i];//if, so return fullName
+       return contacts[i];
        }
     }
-       return undefined;//(return undefined, if no
+       return undefined;
        },
+
        removeContact: function(contact){
         for (let i = 0; i < contacts.length; i++){
 if (contacts[i] === contact){
@@ -76,10 +78,10 @@ if (contacts[i] === contact){
         }
        },
        printAllContactNames: function(){
- let allNames = ''
+ let allNames = '';
  for(let i = 0; i < contacts.length; i++){
     allNames += contacts[i].nameFirst + ' ' + contacts[i].nameLast;
-    if(i < contacts[i][contacts.length - 1]){
+    if(i < [contacts.length - 1]){
         allNames += '\n';
     }
        }

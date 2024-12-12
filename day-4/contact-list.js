@@ -79,7 +79,7 @@ if (contacts[i] === contact){
  let allNames = ''
  for(let i = 0; i < contacts.length; i++){
     allNames += contacts[i].nameFirst + ' ' + contacts[i].nameLast;
-    if(i < contacts.length - 1){
+    if(i < contacts[i][contacts.length - 1]){
         allNames += '\n';
     }
        }

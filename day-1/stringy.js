@@ -191,8 +191,6 @@ for (let i = 0; i < stringOne.length; i++){
         }
     }
 }
-
-
     // YOUR CODE ABOVE HERE //
 }
 

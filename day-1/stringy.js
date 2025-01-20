@@ -133,12 +133,15 @@ function endsWith(string, char) {
  * Given two input Strings, return the Strings concatenated into one.
  *
  * TIP: What's the operator to concatenate two Strings?
+ * 
+ * I: two strings
+ * O: two strings concatenated 
+ * C: use concat string prototype
  */
 function concat(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-
-
-
+//return the strings concatenated
+return stringOne.concat(stringTwo)
     // YOUR CODE ABOVE HERE //
 }
 
@@ -168,10 +171,26 @@ function join(stringOne, stringTwo) {
  *      longest("ben", "maggie");   //-> "maggie"
  *
  * TIP: What property of the String do we need to compare?
+ * 
+ * 
+ * I: two strings
+ * O: return longest of the two strings
+ * C: for loop to count, if statement to compare lengths
+ * 
  */
 function longest(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-
+    //nested for loop to count string lengths
+    //and then to compare and return the longest of the two
+for (let i = 0; i < stringOne.length; i++){
+    for (let j = 0; j < stringTwo.length; j++){
+        if (stringOne.length > stringTwo.length){
+            return stringOne;
+        }else {
+            return stringTwo;
+        }
+    }
+}
 
 
     // YOUR CODE ABOVE HERE //

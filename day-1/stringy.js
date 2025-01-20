@@ -2,6 +2,8 @@
 
 'use strict';
 
+const { startsWith } = require("lodash");
+
 /**
  * IN CLASS EXERCISE: stringy.js
  */
@@ -61,17 +63,23 @@ return string.toUpperCase()
  *
  *      See: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace#Using_global_and_ignore_with_replace()
  * 
- I:
- O:
+ I: string data
+ O: dash-case string 
  * 
  * 
  */
 function toDashCase(string) {
-    // YOUR CODE BELOW HERE //
-
-
-
-    // YOUR CODE ABOVE HERE //
+    //create splitStr variable to hold split string
+    let splitStr = string.split(' ')
+    // for loop to loop through string characters
+    //for (let i = 0; i < splitStr.length; i++){
+       // if (splitStr[i] === " "){
+       //    return splitStr[i] = "-"
+      //  }
+    //}
+    //return split string joined with any spaces replaced with dashes and then converted to lowercase
+    //to account for case sensitivity
+    return splitStr.join("-").toLowerCase()
 }
 
 /**
@@ -85,14 +93,21 @@ function toDashCase(string) {
  *
  * TIP: How can you use Array access to your advantage here? How can you
  *      ensure uppercase and lowercase can be compared equally?
+ 
+ I: string data, single character (string data)
+ O: boolean value: true if string starts with char, false if not
+ C: must be lowercased to account for case sensitivity 
  */
 function beginsWith(string, char) {
-    // YOUR CODE BELOW HERE //
-
-    
-
-    // YOUR CODE ABOVE HERE //
+// using bracket notation to see if first index is strictly equal to char input
+//adding toLowerCase to account for case sensitivity
+if(string[0].toLowerCase() === char.toLowerCase()){
+    return true
+    }else {
+        return false
+    }
 }
+
 
 /**
  * Given an input String and a single character, return true if the String

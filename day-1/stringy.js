@@ -26,23 +26,26 @@ return string.length
 
 /**
  * Given an input String, return a new String forced to lowercase.
+ * 
+ I: string data
+ O: lowercase string 
+ * 
  */
 function toLowerCase(string) {
-    // YOUR CODE BELOW HERE //
-   
-
-    // YOUR CODE ABOVE HERE //
+    //lowerCase prototype
+return string.toLowerCase();
 }
 
 /**
  * Given an input String, return a new String forced to uppercase.
+ * 
+ I: string
+ O: uppercase string
+ * 
  */
 function toUpperCase(string) {
-    // YOUR CODE BELOW HERE //
-
-
-
-    // YOUR CODE ABOVE HERE //
+    // return toUpperCase string
+return string.toUpperCase()
 }
 
 /**
@@ -57,6 +60,11 @@ function toUpperCase(string) {
  *      methods split and join?
  *
  *      See: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace#Using_global_and_ignore_with_replace()
+ * 
+ I:
+ O:
+ * 
+ * 
  */
 function toDashCase(string) {
     // YOUR CODE BELOW HERE //

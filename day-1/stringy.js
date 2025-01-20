@@ -122,11 +122,11 @@ if(string[0].toLowerCase() === char.toLowerCase()){
  *      ensure uppercase and lowercase can be compared equally?
  */
 function endsWith(string, char) {
-    // YOUR CODE BELOW HERE //
-
-
-
-    // YOUR CODE ABOVE HERE //
+   if(string[string.length - 1].toLowerCase() === char.toLowerCase()){
+    return true;
+   }else {
+    return false;
+   }
 }
 
 /**

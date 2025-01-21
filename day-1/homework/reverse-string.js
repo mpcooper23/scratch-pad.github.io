@@ -17,14 +17,19 @@
  *     when to stop looping?
  *  c. how do you access individual characters of a String?
  *  d. how do you concatenate Strings? What operator do we use?
+ I: string data
+ O: string reversed
+ C: reverse for loop
+ * 
  */
 
 function reverseString(input) {
     // YOUR CODE GOES BELOW HERE //
-    
-    
-    
-    
+    let output = '';
+    for(let i = input.length - 1; i >= 0; i--){
+      output += input[i]
+    }
+    return output
     // YOUR CODE GOES ABOVE HERE //
 }
 

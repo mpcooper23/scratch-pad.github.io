@@ -9,7 +9,10 @@
  *  b. BUT, for multiples of three print “Fizz” instead of the number.
  *  c. AND for the multiples of five print “Buzz”.
  *  d. FINALLY, for numbers which are multiples of both three and five print “FizzBuzz”.
-*/
+ * 
+ * I:
+ * O:
+ * 
 function fizzBuzz() {
     // YOUR CODE GOES BELOW HERE //
 

@@ -200,10 +200,15 @@ for (let i = 0; i < stringOne.length; i++){
  * first, and return 0 if they're equal.
  *
  * TIP: How can we compare Strings? Is 'a' greater than or less than 'b'?
+ * 
+ * I: two strings
+ * O: return numbers to indicate which input is higher in order
+ * C: convert string to numbers, nested for loops
+ * 
  */
 function sortAscending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-
+let con1 = 
     // YOUR CODE ABOVE HERE //
 }
 

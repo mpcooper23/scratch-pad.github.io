@@ -201,14 +201,13 @@ for (let i = 0; i < stringOne.length; i++){
  *
  * TIP: How can we compare Strings? Is 'a' greater than or less than 'b'?
  * 
- * I: two strings
- * O: return numbers to indicate which input is higher in order
- * C: convert string to numbers, nested for loops
+ I: two strings
+ O: strings to number, see which is greater than alphabetically
  * 
  */
 function sortAscending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-let con1 = 
+
     // YOUR CODE ABOVE HERE //
 }
 
@@ -217,6 +216,9 @@ let con1 =
  * Given two Strings, return 1 if the first is lower in alphabetical order (meaning later in the alphabet) than
  * the second, return -1 if the second is lower in alphabetical order than the
  * first, and return 0 if they're equal.
+ * 
+ *  I: two strings
+ O: strings to number, order them alphabetically, return 0 if they are equal
  *
  * TIP: How can we compare Strings? Is 'a' greater than or less than 'b'?
  */

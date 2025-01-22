@@ -16,15 +16,14 @@
  
 function fizzBuzz() {
     // YOUR CODE GOES BELOW HERE //
-for(let i = 1; i > 100; i++){
+for(let i = 1; i <= 100; i++){
     if (i % 3 === 0 && i % 5 === 0){
         console.log("FizzBuzz")
-    }
-    else if (i % 3 === 0){
+    }else if (i % 3 === 0){
         console.log("Fizz")
     }else if (i % 5 === 0){
         console.log("Buzz")
-    }else{
+    }else {
     console.log(i)
 }
 }
@@ -32,7 +31,7 @@ for(let i = 1; i > 100; i++){
 
     // YOUR CODE GOES ABOVE HERE //
 }
-
+console.log(fizzBuzz(100))
 
 
 

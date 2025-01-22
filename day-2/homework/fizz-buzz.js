@@ -16,7 +16,7 @@
  
 function fizzBuzz() {
     // YOUR CODE GOES BELOW HERE //
-for(let i = 1; i <= 100; i++){
+for(let i = 1; i <= 100; i++){//WATCH OUT for correct comparison operators!!
     if (i % 3 === 0 && i % 5 === 0){
         console.log("FizzBuzz")
     }else if (i % 3 === 0){

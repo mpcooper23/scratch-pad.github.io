@@ -16,6 +16,8 @@ function createGreaterThanFilter(base) {
     return function (value){
 if (value > base){
     return true
+}else {
+    return false
 }
     }
     // YOUR CODE ABOVE HERE //
@@ -29,10 +31,11 @@ if (value > base){
  */
 function createLessThanFilter(base) {
     // YOUR CODE BELOW HERE //
-    
-  
-    
-    
+    return function (value){//remember to plug in parameter!
+        if(value < base){
+            return true
+        }else {return false}
+    }
     // YOUR CODE ABOVE HERE //
 }
 

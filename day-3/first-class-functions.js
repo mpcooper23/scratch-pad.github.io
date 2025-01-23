@@ -13,7 +13,7 @@
  */
 function createGreaterThanFilter(base) {
     // YOUR CODE BELOW HERE //
-    return function (value){
+    return function (value){//functions are pieces of data, and thus returnable
 if (value > base){
     return true
 }else {

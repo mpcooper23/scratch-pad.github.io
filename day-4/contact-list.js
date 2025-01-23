@@ -56,7 +56,7 @@ makeContactList(); // => { length: function(){}, addContact: function(){}, findC
 
 
 
-// YOUR CODE GOES ABOVE HERE //
+
 
 
 

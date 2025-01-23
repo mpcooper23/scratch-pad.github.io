@@ -47,11 +47,14 @@ function createLessThanFilter(base) {
  * This function needs to be case insensitive.
  */
 function createStartsWithFilter(startsWith) {
-    // YOUR CODE BELOW HERE //
-    
-    
-    
-    
+    // Be sure to append each conditional case with .toLowerCase() //
+    return function(string){
+        if(string[0].toLowerCase() === startsWith.toLowerCase()){
+            return true;
+        }else {
+            return false;
+        }
+    }
     // YOUR CODE ABOVE HERE //
 }
 
@@ -64,10 +67,13 @@ function createStartsWithFilter(startsWith) {
  */
 function createEndsWithFilter(endsWith) {
     // YOUR CODE BELOW HERE //
-    
-    
-    
-    
+    return function(string){
+        if(string[string.length - 1].toLowerCase() === endsWith.toLowerCase()){
+            return true;
+        }else{
+            return false;
+        }
+    }
     // YOUR CODE ABOVE HERE //
 }
 

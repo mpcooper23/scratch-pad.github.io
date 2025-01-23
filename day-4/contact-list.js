@@ -39,18 +39,18 @@ function makeContact(id, nameFirst, nameLast) {
 } 
 
 
-
-function makeContactList() {
-    /*
-     * You need something here to hold contacts. See length api for a hint:
-     */
+function makeContactList(){
+    //create output array named 'contacts'
     var contacts = [];
-    
+    //return object literal
     return {
-        // we implemented the length api for you //
-       
+        length: function (){
+            return contacts.length;
+        },
+
     }
 }
+
 
 makeContactList(); // => { length: function(){}, addContact: function(){}, findContact: function(){}  }
 

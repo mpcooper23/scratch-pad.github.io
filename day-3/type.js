@@ -39,13 +39,23 @@ function isArray(value) {
  */
 function isObject(value) {
     // YOUR CODE BELOW HERE //
- if(Array.isArray(value)) return false
-    if(value === null) return false
-    if (value instanceof Date) return false 
-    if(typeof value === 'number')
-    return false;
- if (typeof value === 'object')
+    if (Array.isArray(value)) {
+        return false;
+    } else if (value === null) {//'null' check must come BEFORE general 'object' check
+        return false;
+    } else if (value instanceof Date) {
+        return false;
+    }else if (typeof value === 'number') {//include all other data types, too, even simple ones
+        return false;
+    } else if (typeof value === 'string') {
+        return false;
+    } else if (typeof value === 'boolean') {
+        return false;
+    } else if (typeof value === 'function') {
+        return false;
+    } else if (typeof value === 'object') {
         return true;
+    }
     // YOUR CODE ABOVE HERE //
 }
 
@@ -58,13 +68,24 @@ function isObject(value) {
  * TIP: Similar to isObject, but we must return true if the value is an Array.
  */
 function isCollection(value) {
-    // YOUR CODE BELOW HERE //
-    
-    if(value === null || value instanceof Date || value === typeof 'number'){
+    // YOUR CODE BELOW HERE //  
+    if (Array.isArray(value)) {//can start with array test, but must preceed object test with null, Date, etc.
+        return true;
+    } else if (value === null) {//'null' check must come BEFORE general 'object' check
         return false;
-    }else if (typeof value === 'object' || Array.isArray(value))
-          {return true;
-        }
+    } else if (value instanceof Date) {
+        return false;
+    }else if (typeof value === 'number') {//include all other data types, too, even simple ones
+        return false;
+    } else if (typeof value === 'string') {
+        return false;
+    } else if (typeof value === 'boolean') {
+        return false;
+    } else if (typeof value === 'function') {
+        return false;
+    } else if (typeof value === 'object') {
+        return true;
+    }
     // YOUR CODE ABOVE HERE //
 }
 
@@ -86,13 +107,28 @@ function isCollection(value) {
  *    typeOf(134) -> "number"
  *    typeOf("javascript") -> "string"
  *    typeOf([1,2,3]) -> "array"
- */ 
-function typeOf(value) {
-    // YOUR CODE BELOW HERE //
-    
-    
-    
-    
+ */
+    function typeOf(value) {
+        // YOUR CODE BELOW HERE //
+        if (Array.isArray(value)) {
+            return 'array';
+        } else if (value === null) {//'null' check must come BEFORE general 'object' check
+            return 'null';
+        } else if (value instanceof Date) {
+            return 'date';
+        } else if (typeof value === 'number') {
+            return 'number';
+        } else if (typeof value === 'string') {
+            return 'string';
+        } else if (typeof value === 'boolean') {
+            return 'boolean';
+        } else if (typeof value === 'function') {
+            return 'function';
+        } else if (typeof value === 'object') {
+            return 'object';
+        } else if (typeof value === 'undefined') {
+            return 'undefined';
+        }
     // YOUR CODE ABOVE HERE //
 }
 

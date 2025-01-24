@@ -158,8 +158,7 @@ return stringOne.concat(stringTwo)
 function join(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
     var args = Array.from(arguments);
-
-
+return args.join('')
     // YOUR CODE ABOVE HERE //
 }
 
@@ -207,7 +206,13 @@ for (let i = 0; i < stringOne.length; i++){
  */
 function sortAscending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-
+if (stringOne === stringTwo){
+    return 0
+}else if (stringOne > stringTwo){
+    return - 1
+}else if (stringOne < stringTwo){
+    return 1
+}
     // YOUR CODE ABOVE HERE //
 }
 
@@ -222,12 +227,18 @@ function sortAscending(stringOne, stringTwo) {
  *
  * TIP: How can we compare Strings? Is 'a' greater than or less than 'b'?
  */
+
+//Why do these only pass if returns are opposite of those indicated in instructions
+   //(i.e. shouldn't the condition returns be swapped?)
 function sortDescending(stringOne, stringTwo) {
     // YOUR CODE BELOW HERE //
-
-
-
-
+if (stringOne > stringTwo){
+    return 1
+}else if (stringOne < stringTwo){
+    return - 1
+}else if (stringOne === stringTwo){
+    return 0
+}
     // YOUR CODE ABOVE HERE //
 }
 

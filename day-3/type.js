@@ -39,11 +39,13 @@ function isArray(value) {
  */
 function isObject(value) {
     // YOUR CODE BELOW HERE //
- if(Array.isArray(value) || value === null || value instanceof Date || value === typeof 'number'){
+ if(Array.isArray(value)) return false
+    if(value === null) return false
+    if (value instanceof Date) return false 
+    if(typeof value === 'number')
     return false;
-}else if (typeof value === 'object')
-      {return true;
-    }
+ if (typeof value === 'object')
+        return true;
     // YOUR CODE ABOVE HERE //
 }
 

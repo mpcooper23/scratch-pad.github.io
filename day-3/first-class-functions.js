@@ -108,12 +108,12 @@ function modifyStrings(strings, modify) {
  */
 function allStringsPass(strings, test) {
     // YOUR CODE BELOW HERE //
-    for(let i = 0; i < strings.length; i++){
-   let result = test(strings[i])
-    if (result) {return true;}
-   else if (!result) {
-    return false;
-   }}
+    for (let i = 0; i < strings.length; i++) {
+        if (!test(strings[i])) {
+            return false;
+        }
+    }
+    return true;
     // YOUR CODE ABOVE HERE //
 }
 

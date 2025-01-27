@@ -43,14 +43,6 @@ function makeContact(id, nameFirst, nameLast) {
 } 
 
 
-function makeContact(id, nameFirst, nameLast) {
-    return {
-        id: id,
-        nameFirst: nameFirst,
-        nameLast: nameLast
-    };
-}
-
 function makeContactList() {
     const contacts = [];
 

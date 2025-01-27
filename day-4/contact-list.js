@@ -35,21 +35,51 @@
 
 // YOUR CODE GOES BELOW HERE //
 function makeContact(id, nameFirst, nameLast) {
-    
+    return {
+        id: id,
+        nameFirst: nameFirst,
+        nameLast: nameLast
+    };
 } 
 
 
-function makeContactList(){
-    //create output array named 'contacts'
-    var contacts = [];
-    //return object literal
+function makeContact(id, nameFirst, nameLast) {
     return {
-        length: function (){
+        id: id,
+        nameFirst: nameFirst,
+        nameLast: nameLast
+    };
+}
+
+function makeContactList() {
+    const contacts = [];
+
+    return {
+        length: function() {
             return contacts.length;
         },
-
-    }
+        addContact: function(contact) {
+            contacts.push(contact);
+        },
+        findContact: function(fullName) {
+            return contacts.find(contact => 
+                `${contact.nameFirst} ${contact.nameLast}` === fullName
+            );
+        },
+        removeContact: function(contact) {
+            const index = contacts.indexOf(contact);
+            if (index !== -1) {
+                contacts.splice(index, 1);
+            }
+        },
+        printAllContactNames: function() {
+            return contacts.map(contact => 
+                `${contact.nameFirst} ${contact.nameLast}`
+            ).join('\n');
+        }
+    };
 }
+
 
 
 makeContactList(); // => { length: function(){}, addContact: function(){}, findContact: function(){}  }
